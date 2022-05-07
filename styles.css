@@ -10,6 +10,11 @@
 body{
     background-color: #2CB3F3;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 1366px;
+    height: 1024px;
+    overflow-x: hidden; /* Como o Figma pede essa configuração para o body, percebi que ele quebrava, porém quando coloquei a overflow vi que tinha a opção do eixo, então selecionei o X pois é o eixo que estava quebrando o site.*/
 }
 
 .Container-welcome{
@@ -64,4 +69,101 @@ body{
     height: 78vh;
     background-color: #FFE1C9;
     border-radius: 50%;
+}
+
+.Container-section_eyes{
+    position: absolute;
+    left: 515.39px;
+    top: 405.88px;
+    width: 25.3vw;
+    height: 9vh;
+}
+
+.Container-section_eyes_left{
+    position: absolute;
+    left: 515.39px;
+    top: 405.88px;
+    width: 55.7px;
+    height: 55.7px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.Container-section_eyes_right{
+    position: absolute;
+    left: 795.46px;
+    top: 405.88px;
+    width: 55.7px;
+    height: 55.7px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.Container-section_form_email{
+    position: absolute;
+    left: 496.29px;
+    top: 563px;
+    width: 373.96px;
+    height: 63.65px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.Container-section_form_password{
+    position: absolute;
+    left:496.29px;
+    top:626px;
+    width:373.96px ;
+    height:63.65px ;
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+
+.Container-section_article_email{
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    left: 511px;
+    top: 581px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #CCCCCC;
+}
+
+.Container-section_article_password{
+    position: absolute;
+    width: 106px;
+    height: 28px;
+    left: 511px;
+    top: 644px;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #CCCCCC;
+}
+
+.Container-section_button{
+    position: absolute;
+    left: 573px;
+    top: 885px;
+    width: 220px;
+    height: 70px;
+    background-color: #55A603;
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color:#B2F272;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.Container-section_button:hover{
+    cursor: pointer;
+    transition: 1.5s;
+    color: #000000;
 }
